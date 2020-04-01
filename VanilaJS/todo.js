@@ -28,3 +28,9 @@ function loadToDos(){
     toDoForm.addEventListener("submit", handleSubmit);
   }
 }
+
+function init() {
+  loadToDos();
+}
+
+init();
