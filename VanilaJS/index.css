@@ -19,7 +19,7 @@ body {
 }
 
 .clock h1 {
-  font-size: 300%;
+  font-size: 500%;
 }
 
 .form,
@@ -31,23 +31,40 @@ body {
   font-size: 150%;
 }
 
-.toDoForm input [type=text] {
-  border-left-width:0;
-　border-right-width:0;
-　border-top-width:0;
-　border-bottom-width:1;
+.toDoForm input[type=text] {
+  background:none;
+  border-top:none;
+  border-right:none;
+  border-left:none;
+  border-bottom:1;
+  border-color:#FFFFFF;
+  color:#FFFFFF;
+  font-weight:bold;
 }
+
+.toDoForm input[type=text]::placeholder {
+  color:#FFFFFF;
+}
+
+.toDoForm input,textarea:focus {
+  outline:none;
+}
+
 
 .showing {
   display: block;
 }
 
 .toDoList {
+  width:50%;
+  margin-left:auto;
+  margin-right:auto;
   padding-left: 0px;
 }
 
 .toDoList li {
   list-style: none;
+  text-align: left;
 }
 
 .toDoList li button {
@@ -67,7 +84,7 @@ body {
 }
 
 .bgImage{
-  position: absolute;
+  position: absoulte;
   top: 0;
   left: 0;
   width: 100%;
