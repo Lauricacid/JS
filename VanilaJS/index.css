@@ -28,25 +28,35 @@ body {
 }
 
 .greetings {
-  font-size: 150%;
+  font-size: 30px;
 }
 
-.toDoForm input[type=text] {
+
+.form input[type=text] {
+  width:300px;
+  font-size:30px;
+  opacity:0.8
+}
+
+.form div {
+  margin-bottom:50px;
+}
+
+input[type=text] {
   background:none;
   border-top:none;
   border-right:none;
   border-left:none;
-  border-bottom:1;
   border-color:#FFFFFF;
   color:#FFFFFF;
   font-weight:bold;
 }
 
-.toDoForm input[type=text]::placeholder {
+input[type=text]::placeholder {
   color:#FFFFFF;
 }
 
-.toDoForm input,textarea:focus {
+input,textarea:focus {
   outline:none;
 }
 
@@ -91,4 +101,5 @@ body {
   height: 100%;
   z-index: -1;
   animation: fadeIn 0.5s linear;
+  opacity:0.9;
 }
